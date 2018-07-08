@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+/* header */
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  min-width: 230px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  background: #00C9FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #92FE9D, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #92FE9D, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.background{
+  width: 315px;
+  height: 280px;  
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;  
+}
+
+.profile-card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.profile-card .profile-caption {
+  width: 100%;
+  padding: 15px 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.profile-card .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.profile-card h3 {
+  margin: 0 0 5px;
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 1.2em
+}
+.profile-card h3 span {
+  display: block;
+  font-size: 0.6em;
+  color: #ffee00;
+  opacity: 0.9;
+}
+.profile-card i {
+  padding: 10px 5px;
+  display: inline-block;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.5;
+}
+.profile-card a {
+  text-decoration: none;
+}
+.profile-card i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.title{
+  font-size: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  border-bottom: 4px #0575E6 solid;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitle{
+  margin-top: 7px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+section{
+  text-align: center;
+}
+/* About me */
+
+.about{
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: left;
+}
+
+/* Education */
+.education{
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: left;
+}
+
+/* Skills*/
+.skills{
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: left;
+}
+
+.dot-container{
+  position : relative;
+  margin-bottom: 8px;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  background: lightgray;
+  margin: 2px;
+}
+
+.active{
+  background: #92FE9D;
+}
+
+.half-active{
+  background: #92FE9D;
+}
+
+.half-active:after{
+  content: "";
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  background: lightgray;
+  position: absolute;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.skill p{
+  margin: 0;
+}
+
+.bullet{
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  margin-right: 5px;
+}
+
