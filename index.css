@@ -98,28 +98,34 @@ body {
 
 section{
   text-align: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1200px){
+  section{
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  section{
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+
+.header{
+  margin: 0;
 }
 /* About me */
 
-.about{
-  margin-left: 20vw;
-  margin-right: 20vw;
-  text-align: left;
-}
-
 /* Education */
-.education{
-  margin-left: 20vw;
-  margin-right: 20vw;
-  text-align: left;
-}
 
 /* Skills*/
-.skills{
-  margin-left: 20vw;
-  margin-right: 20vw;
-  text-align: left;
-}
+
 
 .dot-container{
   position : relative;
