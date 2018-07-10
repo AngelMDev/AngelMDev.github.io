@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600:800);
 body {
   background-color: white;
   padding: 0;
@@ -7,7 +7,7 @@ body {
 }
 /* header */
 
-.header{
+#header{
   margin: 0;
 }
 
@@ -27,10 +27,6 @@ body {
 .background{
   width: 315px;
   height: 280px;  
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;  
 }
 
 .profile-card * {
@@ -38,7 +34,14 @@ body {
   box-sizing: border-box;
 }
 
-.profile-card .profile-caption {
+.profile-caption{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-card .caption {
   width: 100%;
   padding: 15px 25px;
   position: absolute;
@@ -86,9 +89,71 @@ body {
   transition: all 0.35s ease;
 }
 
+.stick{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.shrink{
+  height: 100px;
+}
+
+/* Nav */
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  z-index:10;
+  top:0;
+  position: sticky;
+  height:40px;
+  width: 100%;
+  background: #00C9FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #92FE9D, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #92FE9D, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-right: 50px;
+}
+
+nav a{
+  line-height: 2.5;
+  color: white;
+  margin-right:30px;
+  transition: all 0.5s;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: #92FE9D;
+}
+
+.link-active{
+  color: #ffee00;
+
+}
+
+@media only screen and (max-width: 800px){
+  nav{
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  nav a{
+    margin-right:0;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  nav a{
+    font-size: 0.8rem;
+    line-height: 3;
+  }
+}
+
 /* Footer */
 
-.footer{
+#footer{
   height: 100px;
   width: 100%;
   background: #00C9FF;  /* fallback for old browsers */
@@ -123,7 +188,12 @@ section{
   text-align: center;
   margin-left: 20vw;
   margin-right: 20vw;
+  margin-top: 35px;
   text-align: left;
+}
+
+.empty_space{
+  height: 75vh;
 }
 
 @media only screen and (max-width: 1200px){
