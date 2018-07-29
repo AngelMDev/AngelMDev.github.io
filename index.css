@@ -261,3 +261,10 @@ section{
   margin-right: 5px;
 }
 
+/* Projects */
+
+.project-img{
+  width: 350px;
+  height: auto;
+}
+
